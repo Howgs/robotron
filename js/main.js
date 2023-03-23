@@ -4,9 +4,20 @@ const braco = document.querySelector("#braco");
 
 
 somar.addEventListener("click", () => { 
-    braco.value = parseInt(braco.value) + 1;
+    manipulaDados("somar");
 })
 
 subtrair.addEventListener("click", () => { 
-    braco.value = parseInt(braco.value) - 1;
+    manipulaDados("subtrair")
 })
+
+function manipulaDados(operacao) {
+    if(operacao === "somar") {
+        braco.value = parseInt(braco.value) + 1;
+    }
+
+    else{
+        braco.value = parseInt(braco.value) - 1;
+    }
+
+}
