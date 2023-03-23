@@ -1,24 +1,12 @@
-//document.querySelector(".robo").onclick = dizOi;
+const somar = document.querySelector("#somar");
+const subtrair = document.querySelector("#subtrair");
+const braco = document.querySelector("#braco");
 
 
-
-
-const robo = document.querySelector(".robo");
-const boton = document.querySelector(".producao")
-//robo.onclick = dizOi
-// ou 
-
-
-
-
-function dizOi(nome) {
-    console.log("Oi " + nome);
-}
-
-robo.addEventListener("click", () => { 
-    console.log("Cliquei no Robô")
+somar.addEventListener("click", () => { 
+    braco.value = parseInt(braco.value) + 1;
 })
 
-boton.addEventListener ("click", () => {
-    boton.value  = "Produzido"
+subtrair.addEventListener("click", () => { 
+    braco.value = parseInt(braco.value) - 1;
 })
